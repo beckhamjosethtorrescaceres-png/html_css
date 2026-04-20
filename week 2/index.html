@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotas</title>
+    <link rel="stylesheet" href="asses/css/style.css">
+</head>
+<body>
+    <header>
+       <nav class="nav">
+        <a href="../week1/Index.html">
+            <img src="asses/img/back.png" alt="">
+        </a>
+        <a href="#tipos-mascotas">
+            <img src="asses/img/mascotas.png" alt="">
+        </a>
+        <a href="#perros">
+            <img src="asses/img/descarga.png" alt="Perros">
+        </a>
+
+        <a href="#gatos">
+            <img src="asses/img/gato.png" alt="Gatos">
+        </a>
+        
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section id="principal">
+                <h1> MASCOTAS </h1>
+                <p>Una mascota es un animal doméstico que convive con seres humanos principalmente para brindar compañía,
+                     afecto y placer, sin ser utilizado habitualmente como alimento o animal de trabajo. Son valoradas por disminuir la soledad,
+                     reducir el estrés y fomentar la responsabilidad, siendo considerados miembros de la familia</p>
+                <img src="asses/img/MASCOTAS-1024x512.jpg" alt="Mascota">
+            </section>
+            <section id="tipos-mascotas" class="subt">
+                <h2>Tipos de Mascotas</h2>
+                <p>Los tipos de mascotas abarcan desde animales convencionales como perros y gatos hasta exóticos,
+                     pequeños mamíferos, aves, peces y reptiles. Las opciones más comunes para compañía incluyen perros, gatos, conejos,
+                    hámsters y aves como loros, mientras que otros eligen peces o incluso pequeños reptiles como tortugas.</p>
+                <img src="asses/img/146-large-e80a7096fd72c1a0c067d579e90914fe.jpg" alt="Mascota">
+            </section>
+            <section  id="perros" class="subt">
+                <h2> Perros </h2>
+                <p>Un perro es un animal doméstico mamífero que pertenece a la especie Canis lupus familiaris, es decir, una subespecie del lobo. <br>
+
+                    Se caracteriza por: <br>
+
+                    🐾 Ser leal y sociable, por eso es uno de los animales más cercanos al ser humano <br>
+                    🧠 Tener gran inteligencia, puede aprender órdenes y tareas <br>
+                    🏡 Vivir con humanos como mascota, compañero o incluso trabajador (perros policía, guía, rescate, etc.)<br>
+                    🦴 Tener una gran variedad de razas, tamaños y comportamientos<br>
+
+                    👉 En pocas palabras:<br>
+                    Un perro es un animal doméstico que acompaña al ser humano, brindando compañía, protección y afecto.</p>
+                     <img src="asses/img/doberman-cachorro3.jpg" alt="Mascota">
+            </section>
+            <section id="gatos" class="subt">
+                <div> <h2>Gatos</h2>
+                <p>
+                    Un gato es un animal doméstico mamífero que pertenece a la especie Felis catus.<br>
+                    Se caracteriza por:<br><br>
+
+                    🐱 Ser independiente, aunque también puede ser muy cariñoso<br>
+                    🧠 Tener gran agilidad y reflejos, es excelente cazador<br>
+                    🏡 Adaptarse fácilmente a la vida en casa<br>
+                    🧼 Ser muy limpio, ya que se acicala constantemente<br>
+                    👀 Tener sentidos muy desarrollados, especialmente la vista nocturna<br><br>
+
+                    👉 En pocas palabras:<br>
+                    Un gato es una mascota ágil e independiente que convive con el ser humano brindando compañía, pero a su propio estilo.
+                    </p> </div>
+                <img src="asses/img/GATO_UNAM-1024x768.jpg" alt="">
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center' // 👈 centra la sección (más elegante)
+        });
+    });
+});
+</script>
+</html>
