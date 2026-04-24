@@ -1,0 +1,90 @@
+@charset "UTF-8";
+.cont-sobremi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem 0rem;
+}
+.cont-sobremi h2, .cont-sobremi h3 {
+  text-align: center;
+  font-family: var(--font-main);
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: -2px;
+  /* Gradiente base */
+  background: linear-gradient(135deg, var(--white) 30%, var(--blue-400), var(--purple-500));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* El toque "PRO": Un brillo sutil que lo separa del fondo */
+  filter: drop-shadow(0 0 15px rgba(96, 165, 250, 0.3));
+  /* Una animación suave para que parezca que brilla */
+  transition: filter 0.4s ease;
+}
+.cont-sobremi p {
+  text-align: -webkit-center;
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+  background-color: white;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 65%;
+}
+
+.cont-card {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 22px;
+  color: white;
+  transition: transform 0.3s ease;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 36px;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Se eleva un poquito al hacer hover */
+}
+
+/* Estilo para los iconos con degradado */
+.icon-box {
+  border-radius: 26px;
+  max-width: 114%;
+}
+.icon-box img {
+  width: 62px;
+  border-radius: 18px;
+}
+
+#p-card {
+  display: flex;
+  font-size: 1.3rem;
+  text-align: left;
+  width: 100%;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*# sourceMappingURL=sobremi.css.map */

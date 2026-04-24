@@ -1,0 +1,98 @@
+@import url(../css/root.css);
+@import url(../css/botton.css);
+@import url(../css/inicio.css);
+@import url(../css/sobremi.css);
+@import url(../css/habilidades.css);
+@import url(../css/proyectos.css);
+@import url(../css/contacto.css);
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  align-items: center;
+  background: radial-gradient(circle at center, var(--slate-900), var(--slate-950));
+}
+
+header, footer {
+  width: 100%;
+  height: 70px;
+  border-radius: 8px;
+  display: flex;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(15, 23, 42, 0.3);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(51, 65, 85, 0.4);
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  /* Empuja el logo a la izquierda y el ul a la derecha */
+  align-items: center;
+  /* Centra ambos verticalmente */
+  width: 90%;
+  /* O el ancho que prefieras */
+  padding: 0 20px;
+}
+header nav div {
+  font-size: 32px;
+  color: var(--white);
+  /* Usa tus variables de color */
+  font-family: "Courier New", Courier, monospace;
+}
+header nav ul {
+  display: flex;
+  /* Pone los li en fila */
+  gap: 20px;
+  /* Espacio entre cada enlace */
+  list-style: none;
+  /* Quita los puntos de la lista */
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  font-size: 20px;
+  /* Usa tus variables de color */
+  font-family: "Courier New", Courier, monospace;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  /* Quita el subrayado de los links */
+}
+
+main {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 9rem;
+}
+
+/*# sourceMappingURL=style.css.map */

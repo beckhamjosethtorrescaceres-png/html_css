@@ -1,0 +1,39 @@
+@import url('https://googleapis.com');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /*fuentes*/
+     --font-main: 'Montserrat', sans-serif;
+  /* Fondo y Estructura */
+  --slate-950: #020617;
+  --slate-900: #0f172a;
+  --slate-800: #1e293b;
+  --slate-700: #334155;
+  /* Acentos y Colores Sólidos */
+  --blue-400: #60a5fa;
+  --blue-500: #3b82f6;
+  --purple-400: #c084fc;
+  --purple-500: #a855f7;
+  --pink-400: #f472b6;
+  --pink-500: #ec4899;
+  --cyan-500: #06b6d4;
+  --orange-500: #f97316;
+  --red-500: #ef4444;
+  --green-500: #22c55e;
+  --emerald-500: #10b981;
+  --indigo-500: #6366f1;
+  --rose-500: #f43f5e;
+  /* Texto */
+  --white: #ffffff;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  /* Gradientes (Listos para usar en background) */
+  --gradient-main: linear-gradient(to right, var(--blue-400), var(--purple-500));
+  --gradient-bg: linear-gradient(to bottom, var(--slate-950), var(--slate-900), var(--slate-950));
+  --gradient-card: linear-gradient(to bottom right, rgba(30, 41, 59, 0.5), rgba(15, 23, 42, 0.5));
+}

@@ -1,0 +1,152 @@
+
+#inicio {
+
+  #cont-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5rem 0rem;
+
+    h1 {
+      text-align: center;
+      font-family: var(--font-main);
+      font-weight: 900;
+      font-size: 3rem;
+      letter-spacing: -2px;
+      /* Gradiente base */
+      background: linear-gradient(135deg, var(--white) 30%, var(--blue-400), var(--purple-500));
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      /* El toque "PRO": Un brillo sutil que lo separa del fondo */
+      filter: drop-shadow(0 0 15px rgba(96, 165, 250, 0.3));
+      /* Una animación suave para que parezca que brilla */
+      transition: filter 0.4s ease;
+    }
+
+    img {
+      display: flex;
+      max-width: 25rem;
+      border-radius: 80%;
+      justify-content: center
+    }
+  }
+}
+
+#text {
+
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    text-align: -webkit-center;
+    font-family: var(--font-main);
+    font-weight: 900;
+    font-size: 2rem;
+    letter-spacing: -2px;
+    /* Gradiente base */
+    background: linear-gradient(135deg, var(--white) 30%, var(--blue-400), var(--purple-500));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /* El toque "PRO": Un brillo sutil que lo separa del fondo */
+    /* Una animación suave para que parezca que brilla */
+    transition: filter 0.4s ease;
+
+  }
+
+  p {
+    text-align: -webkit-center;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0px;
+    /* Gradiente base */
+    background-color: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /* Una animación suave para que parezca que brilla */
+    transition: filter 0.4s ease;
+  }
+}
+.social-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* El círculo transparente */
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  
+  color: var(--white);
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse (Hover) */
+.social-icon:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--blue-400); /* Usa tu azul principal */
+  transform: translateY(-5px);    /* Se eleva un poquito */
+  box-shadow: 0 0 15px rgba(96, 165, 250, 0.3); /* Resplandor */
+}
+.social-icon svg {
+    stroke: var(--slate-300); /* Color gris inicial */
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover svg {
+    stroke: var(--blue-400); /* Cambia al azul de tu paleta */
+    filter: drop-shadow(0 0 8px var(--blue-400)); /* Efecto neón */
+}
+
+/* Para asegurar que estén bien centrados */
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scroll-indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  color: var(--slate-400); /* Color suave inicial */
+  animation: saltarAclarar 2s infinite; /* Se repite por siempre */
+}
+
+@keyframes saltarAclarar {
+  0% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(15px); /* Baja 15px */
+    opacity: 1;                  /* Se aclara totalmente */
+    color: var(--blue-400);      /* Opcional: cambia a tu azul pro */
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+}
